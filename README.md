@@ -23,7 +23,7 @@ Manage MySQL databases over the web
 
 ## Screenshots
 
-![](./doc/screenshots/68747470733a2f2f7777772e7068706d7961646d696e2e6e65742f7374617469632f696d616765732f73637265656e73686f74732f7374727563747572652e706e67.png)
+![](./doc/screenshots/screenshot.png)
 
 ## Disclaimers / important information
 
@@ -40,13 +40,13 @@ phpMyAdmin is a free software tool written in PHP, intended to handle the admini
 
 ## Developer info
 
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/phpmyadmin_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/7357-2022/hw2k_phpmyadmin_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/phpmyadmin_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/7357-2022/hw2k_phpmyadmin_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade phpmyadmin -u https://github.com/YunoHost-Apps/phpmyadmin_ynh/tree/testing --debug
+sudo yunohost app upgrade phpmyadmin -u https://github.com/7357-2022/hw2k_phpmyadmin_ynh/tree/testing --debug
 ```
 
 **More info regarding app packaging:** https://yunohost.org/packaging_apps
