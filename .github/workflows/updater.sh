@@ -27,9 +27,9 @@ assets=($(curl --silent "https://api.github.com/repos/$repo/releases" | jq -r '[
 # Later down the script, we assume the version has only digits and dots
 # Sometimes the release name starts with a "v", so let's filter it out.
 # You may need more tweaks here if the upstream repository has different naming conventions. 
-if [[ ${version:0:1} == "v" || ${version:0:1} == "V" ]]; then
-    version=${version:1}
-fi
+## if [[ ${version:0:1} == "v" || ${version:0:1} == "V" ]]; then
+##    version=${version:1}
+## fi
 
 # Setting up the environment variables
 echo "Current version: $current_version"
@@ -67,7 +67,7 @@ echo "Handling asset at $asset_url"
 # Here we base the source file name upon a unique keyword in the assets url (admin vs. update)
 # Leave $src empty to ignore the asset
 case $asset_url in
-  *"phpMyAdmin"*".tar.gz"*)
+    *".tar.gz")
     src="app"
     ;;
   *)
@@ -101,7 +101,7 @@ cat <<EOT > conf/$src.src
 SOURCE_URL=$asset_url
 SOURCE_SUM=$checksum
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=$extension
 SOURCE_IN_SUBDIR=true
 EOT
 echo "... conf/$src.src updated"
