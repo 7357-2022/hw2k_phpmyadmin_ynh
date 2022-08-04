@@ -102,8 +102,7 @@ SOURCE_URL=$asset_url
 SOURCE_SUM=$checksum
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=2
-SOURCE_EXTRACT=true
+SOURCE_IN_SUBDIR=true
 EOT
 echo "... conf/$src.src updated"
 
