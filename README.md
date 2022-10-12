@@ -28,8 +28,10 @@ Manage MySQL databases over the web
 ## Overview
 
 phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.
+
 ## Documentation and resources
 
+* Yunohost app: <https://github.com/YunoHost-Apps/phpmyadmin_ynh>
 * Official app website: http://www.phpmyadmin.net
 * Official admin documentation: https://www.phpmyadmin.net/docs/
 * Upstream app code repository: https://github.com/phpmyadmin/phpmyadmin
