@@ -31,7 +31,7 @@ phpMyAdmin is a free software tool written in PHP, intended to handle the admini
 
 ## Documentation and resources
 
-* Yunohost app: <https://github.com/YunoHost-Apps/phpmyadmin_ynh>
+* YunoHost app: <https://github.com/YunoHost-Apps/phpmyadmin_ynh>
 * Official app website: http://www.phpmyadmin.net
 * Official admin documentation: https://www.phpmyadmin.net/docs/
 * Upstream app code repository: https://github.com/phpmyadmin/phpmyadmin
